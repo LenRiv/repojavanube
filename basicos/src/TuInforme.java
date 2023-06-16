@@ -23,7 +23,7 @@ public class TuInforme {
 		
 		Scanner informe = new Scanner (System.in);
 
-		System.out.println("Ingrese su peso: ");
+		System.out.println();
 
 		int peso = informe.nextInt();
 
