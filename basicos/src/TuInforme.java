@@ -18,23 +18,25 @@ import java.util.Scanner;
 
 
 public class TuInforme {
+	
 	public static void main(String[] args) {
+		
 		
 		
 		Scanner informe = new Scanner (System.in);
 
-		System.out.println();
+		System.out.println("Ingrese su peso");
 
-		int peso = informe.nextInt();
+		float peso = informe.nextFloat();
 
 		System.out.println("Ingrese su estatura: ");
 
-		int estatura = informe.nextInt();
+		float estatura = informe.nextFloat();
 		 
+	Persona paciente1 = new Persona( peso, estatura);
 		
 		
-		
-		
+		System.out.println(paciente1.getPeso() + paciente1.getEstatura());
 		
 		/**
 		 * 

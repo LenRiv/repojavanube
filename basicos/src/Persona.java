@@ -5,14 +5,13 @@ public class Persona {
 	//Atributos
 	private String nombre;
 	private String apellido;
-    public int peso;
-    public int estatura;
+    public float peso;
+    public float estatura;
     
     //Constructor
-    public Persona(String nombre, String apellido, int peso, int estatura)
+    public Persona(float peso, float estatura)
     {
-    	this.nombre = nombre;
-    	this.apellido = apellido;
+    	
     	this.peso = peso;
     	this.estatura = estatura;
     }
@@ -20,29 +19,33 @@ public class Persona {
     
     
       //Metodos
-    	public String getNombre() {
     
-    	return nombre;
-    	
-    	
+    //getter & setter de peso
+    	public void setPeso(float peso) {
+    		this.peso = peso;
     	}
     	
     	
-    	public String getApellido() {
-    		
-    		return apellido;
-    	}
-    	//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
-    	
-    	public int getPeso() {
+    	public float getPeso() {
     		return peso;
     	}
     	
     	
+    	//getter & setter de estatura
+    	public void setEstatura(float estatura) {
+    		this.estatura = estatura;
+    	}
     	
-    	public int getEstatura() {
+    	
+    	public float getEstatura() {
     		return estatura;
     	}
+    	
+    
+    	
+ 
+    	
+    	
     	
     	
     	
