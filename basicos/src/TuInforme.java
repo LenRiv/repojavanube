@@ -34,9 +34,15 @@ public class TuInforme {
 		float estatura = informe.nextFloat();
 		 
 	Persona paciente1 = new Persona( peso, estatura);
+	
+	
 		
 		
-		System.out.println(paciente1.getPeso() + paciente1.getEstatura());
+		System.out.println(paciente1.getPeso() / paciente1.getEstatura());
+		
+		
+		
+		
 		
 		/**
 		 * 

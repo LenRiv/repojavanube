@@ -22,7 +22,7 @@ public class Persona {
     
     //getter & setter de peso
     	public void setPeso(float peso) {
-    		this.peso = peso;
+    		this.peso = peso ;
     	}
     	
     	
@@ -38,8 +38,10 @@ public class Persona {
     	
     	
     	public float getEstatura() {
-    		return estatura;
+    		return estatura * estatura;
     	}
+    	
+    	
     	
     
     	
