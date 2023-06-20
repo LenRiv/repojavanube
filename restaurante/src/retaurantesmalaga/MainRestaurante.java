@@ -60,9 +60,8 @@ private static final String RUTA_FICHERO = "restaurante.txt";
 			System.out.println("FICHERO EXISTE!, a parsearlo");
 			Path path = file.toPath();//Convierto a PATH para usar el nuevo API
 			List<String> lineas = Files.readAllLines(path);
-			for (String linea : lineas) {//leo todo el fichero
-				System.out.println(linea);
-			}
+			List<Restaurante> listRest = cargarRestaurantes(lineas);
+			System.out.println("La lista tiene " + listRest.size() + " restaurante");
 		} else {
 			System.out.println("NO EXISTE el fichero en esa ruta :(");
 		}
